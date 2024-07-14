@@ -10,3 +10,15 @@ pre {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* IE */
 }
+
+section {
+  max-width: 1200px;
+}
+
+#header nav {
+  max-width: 1200px;
+}
+
+.wrapper {
+  max-width: 1200px;
+}
