@@ -34,6 +34,11 @@ This guide will help you set up your MacBook for development by configuring syst
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+**Run these two commands in your terminal to add Homebrew to your PATH:**
+```sh
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/rismyrally/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 ### Update Homebrew
 
