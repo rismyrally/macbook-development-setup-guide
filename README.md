@@ -64,7 +64,8 @@ brew install --cask \
   vlc \
   maccy \
   protonvpn \
-  ngrok
+  ngrok \
+  mongodb-compass
 ```
 
 ### Install Terminal Applications
@@ -405,5 +406,37 @@ sdk install java 17.0.11-tem
 ```sh
 sdk default java 21.0.3-tem
 ```
+
+## Install MongoDB Community Edition
+
+### Installing MongoDB 7.0 Community Edition
+
+Follow these steps to install [MongoDB Community Edition](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#std-label-install-mdb-community-macos) using Homebrew's brew package manager.
+
+1. Tap the [MongoDB Homebrew Tap](https://github.com/mongodb/homebrew-brew) to download the official Homebrew formula for MongoDB and the Database Tools, by running the following command in your macOS Terminal:
+   ```sh
+   brew tap mongodb/brew
+   ```
+3. To update Homebrew and all existing formulae:
+   ```sh
+   brew update
+   ```
+5. To install MongoDB, run the following command in your macOS Terminal application:
+   ```sh
+   brew install mongodb-community@7.0
+   ```
+   > Alternatively, you can specify a previous version of MongoDB if desired. You can also maintain multiple versions of MongoDB side by side in this manner.
+
+### Run MongoDB Community Edition
+
+- To run MongoDB (i.e. the `mongod` process) **as a macOS service**, run:
+  ```sh
+  brew services start mongodb-community@7.0
+  ```
+  To stop a `mongod` running as a macOS service, use the following command as needed:
+  ```sh
+  brew services stop mongodb-community@7.0
+  ```
+
 
 This concludes the guide to getting your MacBook development ready. With these steps, you should have a fully configured development environment tailored to your needs.
