@@ -22,7 +22,11 @@ This guide will help you set up your MacBook for development by configuring syst
    ```sh
    defaults write com.apple.finder ShowStatusBar -bool true
    ```
-5. **Restart Finder**
+5. **To disable macOS’s character palette and restore key repeating**
+   ```sh
+   defaults write -g ApplePressAndHoldEnabled -bool false
+   ```
+6. **Restart Finder**
    ```sh
    killall Finder
    ```
