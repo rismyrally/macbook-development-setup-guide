@@ -30,6 +30,14 @@ This guide will help you set up your MacBook for development by configuring syst
    ```sh
    killall Finder
    ```
+7. **Faster Dock Hiding**
+   ```sh
+   defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
+   ```
+   To undo and restore default settings:
+   ```sh
+   defaults delete com.apple.Dock autohide-delay; killall Dock
+   ```
 
 ## Homebrew
 
